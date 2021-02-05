@@ -11,10 +11,10 @@ char i;
 {
 	if (i != 'q' && i != 'e')
 {
-	putchar(i);
+	putihar(i);
 }
 }
 	putchar('\n');
-	return (o);
+	return (0);
 
 }
