@@ -1,17 +1,28 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - comma
+ * Return: 0 for success
  */
 int main(void)
 {
-char i = '0';
-	for (i = '0' ; i <= '9' ; i++)
+int nd;
+int i;
+	
+	for (nd = 48; nd <= 57; nd++)
 {
+	for (i = 48; i <= 57; i++)
+{
+	putchar(nd);
 	putchar(i);
+	if (nd == 57 && i == 57)
+{
+	break;
+}
+	putchar(',');
+	putchar(' ');
+}
 }
 	putchar('\n');
 	return (0);
-
 }
