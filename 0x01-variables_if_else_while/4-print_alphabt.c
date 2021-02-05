@@ -11,7 +11,7 @@ char i;
 {
 	if (i != 'q' && i != 'e')
 {
-	putihar(i);
+	putchar(i);
 }
 }
 	putchar('\n');
