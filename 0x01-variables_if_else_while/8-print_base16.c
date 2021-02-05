@@ -3,17 +3,17 @@
 #include <time.h>
 
 /**
- * main - Putchar Z to A
+ * main - Hexadecimal Numbers
  * Return: 0 for success
  */
 int main(void)
 {
-int ch;
+char ch;
 
-	for (ch = 'z'; ch >= 'a'; ch--)
+	for (ch = '0'; ch <= '9'; ch++)
 	putchar(ch);
-
+	for (ch = 'a'; ch <= 'f'; ch++)
+	putchar(ch);
 	putchar('\n');
-
 	return (0);
 }
