@@ -1,23 +1,19 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
+
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - Putchar Z to A
+ * Return: 0 for success
  */
 int main(void)
 {
-int i;
-	for (i = '0' ; i <= '9' ; i++)
-{
-	putchar(i);
-}
-	for (i = 'a' ; i <= 'f' ; i++)
-{
-        putchar(i);
-}
-	putchar('\n');
-	return (0);
+char ch = 'a';
 
+	for (ch = 'z'; ch >= 'a'; ch--)
+	putchar(ch);
+
+	putchar('\n');
+
+	return (0);
 }
