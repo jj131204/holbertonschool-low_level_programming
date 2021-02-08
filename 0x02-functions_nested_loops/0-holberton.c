@@ -5,6 +5,7 @@
  */
 int main(void)
 {
-	printf(Holberton)
+
+	printf("Holberton\n");
 	return (0);
 }
