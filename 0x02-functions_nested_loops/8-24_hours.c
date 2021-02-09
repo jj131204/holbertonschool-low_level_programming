@@ -20,7 +20,7 @@ int a, b, c, d;
 {
 	if (a >= 50 && b >= 52)
 	break;
-}
+
 	_putchar(a);
 	_putchar(b);
 	_putchar(58);
@@ -28,6 +28,7 @@ int a, b, c, d;
 	_putchar(d);
 	_putchar('\n');
 
+}
 }
 }
 }
