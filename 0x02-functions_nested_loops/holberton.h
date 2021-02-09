@@ -8,4 +8,4 @@ int _abs(int); /*punto 6*/
 int print_last_digit(int);/*punto 7*/
 void jack_bauer(void); /*punto 8*/
 int add(int, int);/*punto 10*/
-
+void print_to_98(int n); /*punto11*/
