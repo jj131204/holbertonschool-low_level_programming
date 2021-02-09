@@ -5,3 +5,5 @@ int _islower(int c); /*punto 3 */
 int _isalpha(int c); /*punto 4 */
 int print_sign(int n); /*punto 5*/
 int _abs(int); /*punto 6*/
+int print_last_digit(int);/*punto 7*/
+void jack_bauer(void); /*punto 8*/
