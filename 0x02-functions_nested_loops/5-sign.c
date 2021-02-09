@@ -1,10 +1,12 @@
 #include "holberton.h"
+
 /**
- * _islower - Check if the entry is in lower.
+ * print_sign - Compare the variable N
  * @n: This is the entry
  *
  * Return: Always 0.
  */
+
 int print_sign(int n)
 {
 int i = n % 10;
