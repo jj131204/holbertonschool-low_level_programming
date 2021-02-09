@@ -7,3 +7,5 @@ int print_sign(int n); /*punto 5*/
 int _abs(int); /*punto 6*/
 int print_last_digit(int);/*punto 7*/
 void jack_bauer(void); /*punto 8*/
+int add(int, int);/*punto 10*/
+
