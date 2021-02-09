@@ -8,32 +8,34 @@
 
 void times_table(void)
 {
-int a, e, i;
-int uni, dec;
-	for (a >= 0 ; a <= 9  ;  a++)
+int a, b, c;
+
+for (a = 0; a <= 9; a++)
 {
-	for (e >= 0 ; e <= 9  ;  a++)
+for (b = 0; b <= 9; b++)
 {
-	i =  a * e;
-	uni = i % 10;
-	dec = i 10;
-	if (dec == 0)
-	{
-		_putchar(' ');
-		_putchar(uni + '0');
-	}
-	else
-	{
-		_putchar(dec + '0');
-		_putchar(uni + '0');
-	}
-	if (e < 9)
-	{
-		_putchar(',');
-		_putchar(32);
-	}
+c = a * b;
+
+if (b == 0)
+{
+_putchar(c + '0');
 }
-		_putchar('\n');
+else if (c <= 9)
+{
+_putchar(32);
+_putchar(c + '0');
 }
-	return (0);
+else
+{
+_putchar((c / 10) + '0');
+_putchar((c % 10) + '0');
+}
+if (b != 9)
+{
+_putchar(',');
+_putchar(32);
+}
+}
+_putchar('\n');
+}
 }
