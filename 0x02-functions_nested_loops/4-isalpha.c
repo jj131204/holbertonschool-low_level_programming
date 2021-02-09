@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _islower - Check if the entry is in lower.
+ * _isalpha - check the the entry to deteminate if is lower or upper
  * @c: This is the entry
  *
  * Return: Always 0.
