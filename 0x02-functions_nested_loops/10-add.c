@@ -5,14 +5,14 @@
  *
  * @a : number one
  *
- * @e : number two
+ * @b : number two
  * Return: The result
  */
 
-int add(int a, int e)
+int add(int a, int b)
 {
-int i;
-	i = a + e;
-	_putchar(i);
-	return (i);
+	int c;
+
+	c = a + b;
+	return (c);
 }
