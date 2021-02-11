@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
- * _isdigit - return 1 if c  between 0 & 9
+ * mul - multiplca int a con int b
  *
- * @c: This is the entry
  *
+ * @b: This is the entry
+ * @a: This is the entry
  * Return: Always 0.
  */
 int mul(int a, int b)
@@ -12,4 +13,4 @@ int mul(int a, int b)
 int c;
 	c = a * b;
 	return (c);
-}           
+}
