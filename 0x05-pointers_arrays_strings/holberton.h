@@ -7,5 +7,7 @@ void swap_int(int *a, int *b); /*punto 1*/
 int _strlen(char *s); /*punto 2*/
 void _puts(char *str); /*punto 3*/
 void print_rev(char *s); /*punto 4*/
+void rev_string(char *s); /*punto5*/
+
 
 #endif
