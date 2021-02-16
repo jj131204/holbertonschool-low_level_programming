@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * _puts : puntero
- *@str : pointer
+ * _puts - puntero
+ *@str: pointcater
  * Return: Always 0. (sucess)
  */
 
