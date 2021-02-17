@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * _strcpy - main function
- *
- * @src: The source
- *
- * @dest: The destination
- *
- *return : retorna dest
- */
+* *_strcpy - Function
+*
+* @dest: parameter
+*
+* @src: parameter
+*
+* Return: char
+*/
 
 char *_strcpy(char *dest, char *src)
 {
