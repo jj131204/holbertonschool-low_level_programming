@@ -9,6 +9,7 @@ void _puts(char *str); /*punto 3*/
 void print_rev(char *s); /*punto 4*/
 void rev_string(char *s); /*punto5*/
 void puts2(char *str);  /*punto 6*/
+void puts_half(char *str); /*punto 7*/
 void print_array(int *a, int n); /*punto 8*/
 char *_strcpy(char *dest, char *src); /*punto 9*/
 
