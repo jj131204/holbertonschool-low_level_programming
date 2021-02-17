@@ -12,5 +12,5 @@ void puts2(char *str);  /*punto 6*/
 void puts_half(char *str); /*punto 7*/
 void print_array(int *a, int n); /*punto 8*/
 char *_strcpy(char *dest, char *src); /*punto 9*/
-
+int _atoi(char *s); /*punto10 (avanzado)*/
 #endif
