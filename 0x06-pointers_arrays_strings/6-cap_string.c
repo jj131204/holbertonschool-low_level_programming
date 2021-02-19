@@ -1,24 +1,26 @@
 #include "holberton.h"
-
 /**
-  * string_toupper - changes all lowercase letters of a string to uppercase
+  * rot13 - encodes a string using rot13
   * @s: string
-  * Return: pointer to string s
+  * Return: pointer to s
 **/
-
-char *cap_string(char *s)
+char *rot13(char *s)
 {
-int a;
-        for (a = 0 ; s[a] != '\0' ; a++)
-        {
-                if (s[a] >= 'a' && s[a] <= 'z')
-                {
-                    s[a] = s[a] ;     
-			if(s[a] == ' ')
+	int a, b;
+	char abc[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+	for (a = 0; s[a] != '\0'; a++)
+	{
+		for (b = 0; b < 53; b++)
+		{
+			if (s[a] == abc[b])
 			{
-				s[a] = s[a] - 32;
+				s[a] = rot[b];
+				break;
 			}
-                }
-        }
-        return (s);
+		}
+		/*b = 0;*/
+	}
+	return (s);
 }
