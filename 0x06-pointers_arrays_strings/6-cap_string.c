@@ -1,26 +1,29 @@
 #include "holberton.h"
 /**
-  * rot13 - encodes a string using rot13
-  * @s: string
-  * Return: pointer to s
-**/
-char *rot13(char *s)
+ * cap_string - capitalizes all words of a string..
+ * @s: string to capitalize
+ *
+ * Return: Always 0.
+ */
+char *cap_string(char *s)
 {
-	int a, b;
-	char abc[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int i;
+	int j;
+	char s2[] = {' ', 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
-	for (a = 0; s[a] != '\0'; a++)
+	if (s[0] <= 'z' && s[0] >= 'a')
 	{
-		for (b = 0; b < 53; b++)
+		s[0] = s[0] - 32;
+	}
+	for (i = 1; s[i] != '\0'; i++)
+	{
+		for (j = 0; s2[j] != '\0'; j++)
 		{
-			if (s[a] == abc[b])
+			if (s[i] == s2[j] && s[i + 1] <= 'z' && s[i + 1] >= 'a' && s[i + 1] != 0)
 			{
-				s[a] = rot[b];
-				break;
+				s[i + 1] = s[i + 1] - 32;
 			}
 		}
-		/*b = 0;*/
 	}
 	return (s);
 }
