@@ -15,11 +15,10 @@ int a, b;
 	{
 
 	}
-	for (b = 0 ; src[b] > n; b++)
+	for (b = 0 ; b  < n; b++)
 	{
 		dest[a] = src[b];
 		a++;
 	}
-	dest[a] = '\0';
 	return (dest);
 }
