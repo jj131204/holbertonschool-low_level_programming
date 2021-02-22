@@ -17,7 +17,7 @@ char *s = src;
 
 	for (a = 0 ; a < n ; a++)
 	{
-		*d = *s;
+		*s = *d;
 	}
 	return (dest);
 }
