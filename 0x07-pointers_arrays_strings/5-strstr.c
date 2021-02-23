@@ -18,11 +18,12 @@ char *_strstr(char *haystack, char *needle)
 	while (haystack[i] != NULL)
 	{
 		while (*(haystack + i) && *(needle + i) && haystack[i] == needle[i])
+/*variable es diferente de caracter nulo ()*/
 		{
 			i++;
 		}
 
-		if (!needle[i])
+		if (needle[i] == '\0')
 		{
 			return (haystack);
 		}
