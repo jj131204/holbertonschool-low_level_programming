@@ -8,9 +8,8 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int a, b, c;
-
-	c = 0; /*c is the number of characters compared*/
+int a, b, c;
+c = 0; 
 
 	for (a = 0; s[a]; a++)
 	{
