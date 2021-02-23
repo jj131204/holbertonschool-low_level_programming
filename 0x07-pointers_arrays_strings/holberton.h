@@ -1,6 +1,9 @@
 #ifndef _HOLBERTONH
 #define _HOLBERTONH
 
+
+
+int _putchar(char c);
 char *_memset(char *s, char b, unsigned int n); /*punto0*/
 char *_memcpy(char *dest, char *src, unsigned int n); /*punto1*/
 char *_strchr(char *s, char c); /*punto2*/
