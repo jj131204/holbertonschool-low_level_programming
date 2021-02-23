@@ -8,5 +8,6 @@ char *_strchr(char *s, char c); /*punto2*/
 unsigned int _strspn(char *s, char *accept); /*punto3*/
 char *_strpbrk(char *s, char *accept); /*punto4*/
 char *_strstr(char *haystack, char *needle); /*punto5*/
+void print_chessboard(char (*a)[8]); /*punto6*/
 
 #endif
