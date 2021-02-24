@@ -1,7 +1,9 @@
 #ifndef _HOLBERTONH
 #define _HOLBERTONH
 
-int _putchar(char c);
-void _puts_recursion(char *s);
+int _putchar(char c);/*puthar*/
+void _puts_recursion(char *s); /*punto0*/
+void _print_rev_recursion(char *s); /*punto1*/
+int _strlen_recursion(char *s); /*punto2*/
 
 #endif
