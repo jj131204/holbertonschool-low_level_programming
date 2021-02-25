@@ -8,12 +8,12 @@
 int juan_j(int y, int n)
 {
 
-if (n == y)
-return (1);
-if (n % y == 0)
-return (0);
-else
-return (juan_j(y + 1, n));
+	if (n == y)
+		return (1);
+	if (n % y == 0)
+		return (0);
+	else
+		return (juan_j(y + 1, n));
 }
 /**
  *is_prime_number- find if n is prime
@@ -23,8 +23,8 @@ return (juan_j(y + 1, n));
  */
 int is_prime_number(int n)
 {
-if (n < 2)
-return (0);
-else
-return (juan_j(2, n));
+	if (n < 2)
+		return (0);
+	else
+		return (juan_j(2, n));
 }
