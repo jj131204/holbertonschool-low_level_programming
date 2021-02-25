@@ -11,7 +11,6 @@ int _sqrt_recursion(int n)
 return (power(n, 1));
 }
 
-
 /**
 *power - checks if an integer is the square root of a number
 *@n : parameter designing an integer
