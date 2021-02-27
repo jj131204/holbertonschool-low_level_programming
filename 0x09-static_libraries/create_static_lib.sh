@@ -1,2 +1,3 @@
-gcc -Wall -pedantic -Werror -Wextra -c *.c
-ar -rc libholberton.a *.o
+#!/bin/bash
+gcc -c *.c 
+ar -rc liball.a *.o
