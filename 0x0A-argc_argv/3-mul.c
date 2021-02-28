@@ -11,8 +11,8 @@
  */
 int main(int argc, char *argv[])
 {
-int mull = 0; 
-	if (argc > 1)
+int mull = 0;
+	if (argc == 3)
 	{
 		mull = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", mull);
