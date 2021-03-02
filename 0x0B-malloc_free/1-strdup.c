@@ -21,7 +21,7 @@ unsigned int a = 0, b = 0;
 		b++;
 	}
 	/*j = malloc(sizeof(char) * str);*/
-	j = malloc((sizeof(char) * (b + 1));
+	j = malloc(sizeof(char) * (b + 1));
 	if (j == 0)
 	{
 		return (0);
