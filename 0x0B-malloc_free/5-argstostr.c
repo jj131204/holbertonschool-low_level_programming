@@ -3,37 +3,37 @@
 
 char *argstostr(int ac, char **av)
 {
-	int i, j, k, len;
-	char *str;
+	int a, b, c, d; /*i =a  j =b  k = c  len = d*/
+	char *j; /*str = j*/
 
-	if (ac == 0 || av == NULL)
-		return (NULL);
+	if (ac == 0 || av == 0)
+		return (0);
 
-	for (i = 0; i < ac; i++)
+	for (a = 0; a < ac; a++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++)
-			len++;
-		len++;
+		for (b = 0; av[a][b] != '\0'; b++)
+			d++;
+		d++;
 	}
 
-	str = malloc(sizeof(char) * (len + 1));
+	j = malloc(sizeof(char) * (d + 1));
 
-	if (str == NULL)
-		return (NULL);
+	if (d == 0)
+		return (0);
 
-	k = 0;
+	c = 0;
 
-	for (i = 0; i < ac; i++)
+	for (a = 0; a < ac; a++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++)
+		for (b = 0; av[a][b] != '\0'; b++)
 		{
-			str[k] = av[i][j];
-			k++;
+			j[c] = av[a][b];
+			c++;
 		}
-		str[k] = '\n';
-		k++;
+		j[c] = '\n';
+		c++;
 	}
 
-	return (str);
+	return (j);
 
 }
