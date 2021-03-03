@@ -6,5 +6,6 @@ char *_strdup(char *str);/*punto1*/
 char *str_concat(char *s1, char *s2); /*punto2*/
 int **alloc_grid(int width, int height); /*punto3*/
 void free_grid(int **grid, int height); /*punto4*/
+char *argstostr(int ac, char **av); /*punto5*/
 
 #endif
