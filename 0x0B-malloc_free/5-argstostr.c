@@ -1,10 +1,19 @@
 #include "holberton.h"
 #include <stdlib.h>
 
+/**
+ * *argstostr - concatenates all the arguments of the program
+ * @ac: number of arguments
+ * @av: array of arguments
+ *
+ * Return: Pointer to the new string (Success), NULL (Error)
+ */
+
+
 char *argstostr(int ac, char **av)
 {
-	int a, b, c, d; /*i =a  j =b  k = c  len = d*/
-	char *j; /*str = j*/
+	int a, b, c, d;
+	char *j;
 
 	if (ac == 0 || av == 0)
 		return (0);
