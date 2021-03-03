@@ -15,11 +15,11 @@ char *j;
 unsigned int a = 0, b = 0, k;
 	if (s1 == 0)
 	{
-		return ("");
+		s1 = "";
 	}
 	if (s2 == 0)
 	{
-		return ("");
+		s2 = "";
 	}
 	while (s1[a])
 	{
@@ -30,7 +30,7 @@ unsigned int a = 0, b = 0, k;
 		b++;
 	}
 	k = a + b;
-	j = malloc(sizeof(char) * k);
+	j = malloc(sizeof(char) * (k + 1));
 	if (j == 0)
 	{
 		return (0);
