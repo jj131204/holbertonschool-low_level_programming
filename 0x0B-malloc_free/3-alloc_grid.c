@@ -20,13 +20,24 @@ int i, j;
 	}
 	ar = malloc(sizeof(int) * height);
 
-	for (i = 0; i < height; i++)
+	/*for (i = 0; i < height; i++)
 	{
 		ar[i] = malloc(sizeof(int) * width);
-	}
+	}*/
 	if (ar == 0)
 		return (0);
 
+	for (i = 0; i < height; i++)
+	{
+		ar[i] = (int *) malloc(sizeof(int) * width);
+		if (ar[i] == NULL)
+		{
+			free(ar);
+			for (j = 0; j <= i; j++)
+				free(ar[j]);
+			return (NULL);
+		}
+	}
 	for (i = 0; i < height; i++)
 	{
 		for (j = 0; j < width; j++)
