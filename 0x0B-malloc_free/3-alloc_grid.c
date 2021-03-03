@@ -9,37 +9,37 @@
  * Return: pointer to the created matrix (Success)
  * or NULL (Error)
  */
-
 int **alloc_grid(int width, int height)
 {
-int **ar;
-int i, j;
-	if (width <= 0 || height <= 0)
-	{
-		return (0);
-	}
-	ar = (int **)malloc(sizeof(int) * height);
+	int w, h;
+	int **arrstr;
 
-	if (ar == 0)
-		return (0);
+	if (height <= 0 || width <= 0)
+		return (NULL);
 
-	for (i = 0; i < height; i++)
+	arrstr = (int **) malloc(sizeof(int *) * height);
+
+	if (arrstr == NULL)
+		return (NULL);
+
+	for (h = 0; h < height; h++)
 	{
-		ar[i] = (int *) malloc(sizeof(int) * width);
-		if (ar[i] == NULL)
+		arrstr[h] = (int *) malloc(sizeof(int) * width);
+		if (arrstr[h] == NULL)
 		{
-			free(ar);
-			for (j = 0; j <= i; j++)
-				free(ar[j]);
+			free(arrstr);
+			for (w = 0; w <= h; w++)
+				free(arrstr[w]);
 			return (NULL);
 		}
 	}
-	for (i = 0; i < height; i++)
+
+	for (h = 0; h < height; h++)
 	{
-		for (j = 0; j < width; j++)
+		for (w = 0; w < width; w++)
 		{
-			ar[i][j] = 0;
+			arrstr[h][w] = 0;
 		}
 	}
-	return (ar);
+	return (arrstr);
 }
