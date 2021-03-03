@@ -18,7 +18,7 @@ int i, j;
 	{
 		return (0);
 	}
-	ar = malloc(sizeof(int) * height);
+	ar = (int **)malloc(sizeof(int) * height);
 
 	if (ar == 0)
 		return (0);
