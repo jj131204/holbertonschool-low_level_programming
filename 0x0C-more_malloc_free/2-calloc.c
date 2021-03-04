@@ -23,6 +23,6 @@ unsigned int i = 0;
 
 	while (i < nmemb * size)
 		i++;
-		ptr[i] = 0;
+		ptr[i] = '\0';
 	return (ptr);
 }
