@@ -13,6 +13,12 @@ int *array_range(int min, int max)
 int *str;
 int j;
 	j = 0;
+	if (min == 0)
+		return (0);
+
+	if (max == 0)
+		return (0);
+
 	if (min > max)
 	{
 		return (0);
