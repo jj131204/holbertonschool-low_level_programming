@@ -18,14 +18,14 @@ int j;
 		return (0);
 
 	}
-	str = malloc(((max + min) + 1) * sizeof(int));
+	str = malloc(((max - min) + 1) * sizeof(int));
 
 	if (str == 0)
 		return (0);
 	j  = 0;
 	while (j <= max)
 	{
-		str[j] = j;
+		str[j - min] = j;
 		j++;
 	}
 
