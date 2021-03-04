@@ -11,14 +11,7 @@
 int *array_range(int min, int max)
 {
 int *str;
-int j;
-	j = 0;
-	if (min == 0)
-		return (0);
-
-	if (max == 0)
-		return (0);
-
+int i = 0;
 	if (min > max)
 	{
 		return (0);
@@ -28,11 +21,11 @@ int j;
 
 	if (str == 0)
 		return (0);
-	j  = 0;
-	while (j <= max)
+
+	while (i <= max)
 	{
-		str[j - min] = j;
-		j++;
+		str[i - min] = i;
+		i++;
 	}
 
 	return (str);
