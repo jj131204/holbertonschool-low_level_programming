@@ -16,7 +16,7 @@ unsigned int i = 0;
 	if (nmemb == 0)
 		return (0);
 
-	if (nmemb == 0)
+	if (size == 0)
                 return (0);
 
 	ptr = malloc(nmemb * size);
@@ -25,7 +25,9 @@ unsigned int i = 0;
 		return (0);
 
 	while (i < nmemb * size)
-		i++;
+	{
 		ptr[i] = '\0';
+		i++;
+	}
 	return (ptr);
 }
