@@ -17,7 +17,7 @@ int i = 0;
 		return (0);
 
 	}
-	str = malloc(((max - min) + 1) * sizeof(int));
+	str = malloc((unsigned int)((max - min) + 1) * sizeof(int));
 
 	if (str == 0)
 		return (0);
