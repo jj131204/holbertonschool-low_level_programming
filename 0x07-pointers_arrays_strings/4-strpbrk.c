@@ -1,6 +1,5 @@
 #include "holberton.h"
 #include <stddef.h>
-
 /**
  * _strpbrk - This is my function
  * @s: This is my entry

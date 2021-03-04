@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
  * print_chessboard - prints the chessboard
  * @a: is the array of the chessboard
