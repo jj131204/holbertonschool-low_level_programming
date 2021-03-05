@@ -1,5 +1,5 @@
-#include "holberton.h"
 #include <stdlib.h>
+#include "holberton.h"
 /**
  *array_range - creates an array of integers
  *@min: min value for the integers
@@ -10,23 +10,18 @@
 
 int *array_range(int min, int max)
 {
-int *str;
-int i = 0;
+	int *ptr = NULL;
+	int i = min;
+
 	if (min > max)
-	{
-		return (0);
-
-	}
-	str = malloc((unsigned int)((max - min) + 1) * sizeof(int));
-
-	if (str == 0)
-		return (0);
-
+		return (NULL);
+	ptr = malloc((unsigned int)((max - min) + 1) * sizeof(int));
+	if (ptr == NULL)
+		return (NULL);
 	while (i <= max)
 	{
-		str[i - min] = i;
+		ptr[i - min] = i;
 		i++;
 	}
-
-	return (str);
+	return (ptr);
 }
