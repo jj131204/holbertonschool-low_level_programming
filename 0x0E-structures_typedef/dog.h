@@ -1,7 +1,7 @@
 #ifndef DOG_H
 #define DOG_H
 /**
-* struct dog - Breve descripción
+* struct dog - estructure
 * @name: Primer miembro
 * @age: Segundo miembro
 * @owner: tercer miembro
@@ -15,4 +15,6 @@ typedef struct dog
 	char *owner;
 
 } dog;
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif
