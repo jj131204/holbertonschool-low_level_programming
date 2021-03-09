@@ -58,7 +58,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	my_new_dog->age = age;
-
 	return (my_new_dog);
 }
 
@@ -88,19 +87,14 @@ int _strlen(char *s)
  *
  * @dest: Destiny
  * @src: Source
- * Return: Source Value
- */
-
-char *_strcpy(char *dest, char *src)
+ * Return: S
+*/
+char *_strcpy(char *x, char *y)
 {
-	int i = 0;
+	char *a = x;
 
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-
-	dest[i] = '\0';
-	return (dest);
+	while (*y)
+		*a++ = *y++;
+	*a = '\0';
+	return (x);
 }
