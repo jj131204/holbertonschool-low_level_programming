@@ -1,94 +1,72 @@
 #include "dog.h"
 #include <stdlib.h>
-
 int _strlen(char *s);
-char *_strcpy(char *dest, char *src);
-
+char *_strcpy(char *x, char *y);
 /**
- * new_dog - Creates a new dog.
+ * new_dog - makes a new dog, memory and all
+ * @name: name to create mem and assign to for dog
+ * @age: age to assign to for dog
+ * @owner: owner to create mem and assign to for dog
  *
- * @name: Name of the dog.
- * @age: Age of the dog.
- * @owner: Owner of the dog.
- *
- * Return: If the fuction fails, returns (0).
- *         Else, returns a new dog.
+ * Return: pointer to new dog_t (struct dog)
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *my_new_dog;
+	dog_t *new_d;
 
-	my_new_dog = malloc(sizeof(dog_t));
-
-	if (my_new_dog == 0)
-		return (0);
-
-	if (name == 0)
-		my_new_dog->name = 0;
-
+	new_d = malloc(sizeof(dog_t));
+	if (new_d == NULL)
+		return (NULL);
+	if (name == NULL)
+		new_d->name = NULL;
 	else
 	{
-		my_new_dog->name = (char *) malloc(_strlen(name) + 1);
-
-		if (my_new_dog->name == 0)
+		new_d->name = malloc(_strlen(name) + 1);
+		if (new_d->name == NULL)
 		{
-			free(my_new_dog);
-			return (0);
+			free(new_d);
+			return (NULL);
 		}
-
-		my_new_dog->name = _strcpy(my_new_dog->name, name);
+		new_d->name = _strcpy(new_d->name, name);
 	}
-
-	if (owner == 0)
-		my_new_dog->owner = 0;
-
+	if (owner == NULL)
+		new_d->owner = NULL;
 	else
 	{
-		my_new_dog->owner = (char *) malloc(_strlen(owner) + 1);
-
-		if (my_new_dog->owner == 0)
+		new_d->owner = malloc(_strlen(owner) + 1);
+		if (new_d->owner == NULL)
 		{
-			free(my_new_dog->owner);
-			free(my_new_dog);
-			return (0);
+			free(new_d->name);
+			free(new_d);
+			return (NULL);
 		}
-
-		my_new_dog->owner = _strcpy(my_new_dog->owner, owner);
+		new_d->owner = _strcpy(new_d->owner, owner);
 	}
-
-	my_new_dog->age = age;
-	return (my_new_dog);
+	new_d->age = age;
+	return (new_d);
 }
-
 /**
- * _strlen - returns the length of a string
- * @s: String pointer
+ * _strlen - gets len of str
+ * @s: string to get length of
  *
- * Return: length of a string
+ * Return: length of s
  */
-
 int _strlen(char *s)
 {
-	int c = 0;
+	int i = 0;
 
-	while (*s != '\0')
-	{
-		c++;
-		s++;
-	}
-	return (c);
+	for (i = 0; s[i]; i++)
+		;
+	return (i);
 }
-
 /**
- * _strcpy - copies the string pointed to by src,
- *           including the terminating null byte (\0),
- *           to the buffer pointed to by dest.
+ * _strcpy - copies string from y to x
  *
- * @dest: Destiny
- * @src: Source
- * Return: S
-*/
+ * @x: pointer to destination of string
+ * @y: pointer to source string to copy from
+ *
+ * Return: pointer to dest
+ */
 char *_strcpy(char *x, char *y)
 {
 	char *a = x;
