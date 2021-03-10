@@ -15,5 +15,5 @@ void print_name(char *name, void (*f)(char *))
 	if (!name)
 		return;
 
-	f(name); /* (*f)(name) is the same and both is dereference */
+	f(name); 
 }
