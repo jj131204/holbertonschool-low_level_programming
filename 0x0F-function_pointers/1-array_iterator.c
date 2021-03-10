@@ -16,7 +16,7 @@ size_t i;
 
 	for (i = 0; size[i] != '\0'; i++)
 	{
-		action(array[i];)
+		action(array[i]);
 	}
 
 }
