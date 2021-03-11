@@ -18,9 +18,15 @@ int respuesta;
 		exit(98);
 	}
 
-	if (argv[2] == NULL)
+	if ((*argv[2] != '+' &&
+	     *argv[2] != '-' &&
+	     *argv[2] != '*' &&
+	     *argv[2] != '/' &&
+	     *argv[2] != '%') ||
+	    argv[2][1] != 0
+		)
 	{
-		printf("ERROR\n");
+		printf("Error\n");
 		exit(99);
 	}
 	if ((*argv[2] == '/' || *argv[2] == '%') && *argv[3] == '0')
