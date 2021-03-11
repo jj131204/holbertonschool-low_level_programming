@@ -1,4 +1,7 @@
+  
 #include "function_pointers.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * array_iterator - print array in Hexadecimal and Integer
  * @array: collection of elements of the type same
@@ -7,10 +10,9 @@
  *
  * Return: Nothing.
  */
-
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-size_t i = 0;
+	size_t i;
 
 	if (!array)
 		return;
@@ -23,5 +25,4 @@ size_t i = 0;
 		action(array[i]);
 		i++;
 	}
-
 }
