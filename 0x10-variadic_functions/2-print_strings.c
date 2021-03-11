@@ -26,7 +26,7 @@ va_list print;
 		else
 			printf("%s", str);
 
-		
+
 		if (i + 1 != n)
 			printf("%s", separator);
 	}
