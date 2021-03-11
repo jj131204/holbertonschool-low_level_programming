@@ -23,3 +23,5 @@ Welcome to the Holberton School's Low Level Programming repository where I'll be
 | **[0x0C. C - more_malloc_free](0x0C-more_malloc_free)**                                | *More malloc and free*                          |
 | **[0x0D. C - preprocessor](0x0D-preprocessor)**                                        | *preprocessor*                                  |
 | **[0x0E. C - structures_typedef](0x0E-structures_typedef)**                            | *structures_typedef*                            |
+| **[0x0F. C - function_pointers](00x0F-function_pointers)**                             | *function_pointers*                             | 
+| **[0x10. C - variadic_functions](0x10-variadic_functions)**                            | *variadic_functions*                            | 
