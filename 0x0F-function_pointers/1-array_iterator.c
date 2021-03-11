@@ -4,7 +4,7 @@
  * array_iterator - print array in Hexadecimal and Integer
  * @array: collection of elements of the type same
  * @size: size of the array
- * @action: name function pointer
+ * @action: nombre de la funcion pointer
  *
  * Return: Nothing.
  */
