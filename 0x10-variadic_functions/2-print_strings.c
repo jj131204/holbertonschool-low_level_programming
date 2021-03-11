@@ -12,6 +12,9 @@ va_list print;
 	unsigned int i;
 	char *str;
 
+	if (separator == NULL)
+		separator = "";
+
 	va_start(print, n);
 
 	for (i = 0; i < n; i++)
@@ -23,6 +26,7 @@ va_list print;
 		else
 			printf("%s", str);
 
+		
 		if (i + 1 != n)
 			printf("%s", separator);
 	}
