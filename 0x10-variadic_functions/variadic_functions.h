@@ -15,4 +15,4 @@ typedef struct printargument
 	void (*func)();
 } printargument;
 
-#endif
+#endif /* VARIADIC_FUNCTIONS_H */
