@@ -1,11 +1,11 @@
 #include "lists.h"
 
 /**
- * print_list - prints all the elements of a list_t list.
+ * print_list - Prints all the elements of a list.
  *
+ * @h: The number of nodes.
  *
- *
- * return  - he number of nodes.
+ * Return: The number of nodes.
  */
 
 
