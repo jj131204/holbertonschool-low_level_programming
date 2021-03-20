@@ -1,12 +1,12 @@
 #include "lists.h"
 
 /**
- *
- *
- *
- *
- *
+ * add_node - function that adds a new node
+ * @head: linked list data structure header
+ * @str: value of new node
+ * Return: number of nodes
  */
+
 
 list_t *add_node(list_t **head, const char *str)
 {
