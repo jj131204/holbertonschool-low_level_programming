@@ -1,5 +1,13 @@
 #include "lists.h"
 
+/**
+ *
+ *
+ *
+ *
+ *
+ */
+
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
@@ -11,13 +19,13 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 
 	while (str != NULL)
-		l++;
+		n++;
 
 	new_node->str = strdup(str);
 	new_node->next = *head;
 	new_node->len = n;
 
-	*head = new;
+	*head = new_node;
 
 	return (*head);
 
