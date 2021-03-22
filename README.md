@@ -8,7 +8,7 @@ Welcome to the Holberton School's Low Level Programming repository where I'll be
 
 | **Project**                                                                            | **Description**                                 |
 | -------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| **[0x00. C - Hello, World](./0x00-hello_world)**                                           | *Hello world in the world C.*                   |
+| **[0x00. C - Hello, World](./0x00-hello_world)**                                           | *Hello world in the world C.*               |
 | **[0x01. C - Variables, if, else, while](./0x01-variables_if_else_while)**             | *Variables (if, else, while).*                  |
 | **[0x02. C - Functions, nested loops](./0x02-functions_nested_loops)**                 | *Nested loops.*                                 |
 | **[0x03. C - Debugging](./0x03-debugging)**                                            | *Debugging programs.*                           |
@@ -25,3 +25,5 @@ Welcome to the Holberton School's Low Level Programming repository where I'll be
 | **[0x0E. C - structures_typedef](0x0E-structures_typedef)**                            | *structures_typedef*                            |
 | **[0x0F. C - function_pointers](00x0F-function_pointers)**                             | *function_pointers*                             | 
 | **[0x10. C - variadic_functions](0x10-variadic_functions)**                            | *variadic_functions*                            | 
+| **[0x12. C - singly_linked_lists](0x12-singly_linked_lists)**                          | *singly_linked_lists*                           | 
+| **[0x13. C - more_singly_linked_lists](0x13-more_singly_linked_lists)**                | *more_singly_linked_lists*                      | 
