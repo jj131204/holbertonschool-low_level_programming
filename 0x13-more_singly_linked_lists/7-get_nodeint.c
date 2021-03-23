@@ -15,19 +15,15 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	listint_t *node = head;
 	 unsigned int count = 0;
 
-	if  (!head || !index)
+
+	while (count < index && node != NULL)
+	{
+		node = node->next;
+		count++;
+	}
+	if (count !=  index)
 		return (NULL);
 
-	else
-	{
-		while (count < index && node != NULL)
-		{
-			node = node->next;
-			count++;
-		}
-		if (count !=  index)
-			return (NULL);
-	}
 	
 	return (node);
 }
