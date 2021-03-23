@@ -8,7 +8,7 @@
 
 void free_listint2(listint_t **head)
 {
-	listint_t *aux;
+/*	listint_t *aux;
 
 	if (head)
 	{
@@ -19,11 +19,17 @@ void free_listint2(listint_t **head)
 			(*head) = aux;
 		}
 		(*head) = NULL;
-	}
+	}*/
 
-	/*listint_t *node;	while (*head) { 	node = (*head)->next;
-	*	free(*head);
-	*	(*head) = next;
-	*}
-	*(*head) = NULL;*/
+	listint_t *node;
+	if (head)
+	{
+		while (*head) 
+		{
+		 	node = (*head)->next;
+			free(*head);
+			(*head) = node;
+		}
+		(*head) = NULL;
+}
 }
