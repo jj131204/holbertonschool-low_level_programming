@@ -30,18 +30,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			count++;
 		}
 		node->n = n;
-
-		if (idx == 0)
-		{
-			node->next = *head;
-			*head = node;
-		}
-
-		else
-		{
-			node->next = new->next;
-			new->next = node;
-		}
+		node->next = new->next;
+		new->next = node;
 	return (node);
 	}
 
