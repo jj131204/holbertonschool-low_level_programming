@@ -27,3 +27,4 @@ Welcome to the Holberton School's Low Level Programming repository where I'll be
 | **[0x10. C - variadic_functions](0x10-variadic_functions)**                            | *variadic_functions*                            | 
 | **[0x12. C - singly_linked_lists](0x12-singly_linked_lists)**                          | *singly_linked_lists*                           | 
 | **[0x13. C - more_singly_linked_lists](0x13-more_singly_linked_lists)**                | *more_singly_linked_lists*                      | 
+| **[0x14. C - bit_manipulation](0x14-bit_manipulation)**                                | *bit_manipulation*                              | 
