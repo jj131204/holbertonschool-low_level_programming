@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * sed_textfile - function that reads a text file and prints.
+ * read_textfile - function that reads a text file and prints.
  * @filename : file
  * @letters : is the number of letters
  * Return: the actual number of letters, read and print
@@ -9,7 +9,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	int i = 0, j = 0;
+	ssize_t i = 0, j = 0;
 	char *buffer;
 
 	if (filename == NULL)
@@ -22,7 +22,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	buffer = malloc(sizeof(letters));
 	if (buffer == NULL)
-		return (0);	
+		return (0);
 
 	i = read(fd, buffer, letters);
 
