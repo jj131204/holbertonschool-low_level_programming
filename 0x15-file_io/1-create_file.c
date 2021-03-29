@@ -4,7 +4,7 @@
  * create_file - function that reads a text file and prints.
  * @filename : file
  * @text_content : is the number of letters
- * Return: 1.
+ * Return: 1 or -1.
  */
 
 int create_file(const char *filename, char *text_content)
@@ -21,7 +21,7 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 
 	if (text_content)
-	{ 	
+	{
 		while (text_content[a])
 			a++;
 	}
