@@ -29,11 +29,15 @@ int main(int argc, char *argv[])
 	if (fd2 == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 
-	while (len == 1024)
+	do {
+		len = read(fd, buffer, 1024);
+		format = write(fd2, buffer, len);
+	} while (len == 1024);
+	/*while (len == 1024)
 	{
 		len = read(fd, buffer, 1024);
 		format = write(fd2, buffer, len);
-	}
+	}*/
 	if (len == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
