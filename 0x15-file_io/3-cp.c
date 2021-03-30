@@ -1,5 +1,12 @@
 #include "holberton.h"
 
+/**
+ * main - main program.
+ * @argc: The number of arguments.
+ * @argv: Each argument.
+ * Description: This program copies the content of a file to another file.
+ * Return: 0.
+ */
 
 int main(int argc, char *argv[])
 {
