@@ -33,18 +33,12 @@ int main(int argc, char *argv[])
 		len = read(fd, buffer, 1024);
 		format = write(fd2, buffer, len);
 	} while (len == 1024);
-	/*while (len == 1024)
-	{
-		len = read(fd, buffer, 1024);
-		format = write(fd2, buffer, len);
-	}*/
 	if (len == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	if (format == -1)
-
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 
 	if (close(fd) == -1)
@@ -52,6 +46,5 @@ int main(int argc, char *argv[])
 
 	if (close(fd2) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd2), exit(100);
-
 	return (0);
 }
