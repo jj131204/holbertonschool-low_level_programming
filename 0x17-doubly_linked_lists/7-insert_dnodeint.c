@@ -2,7 +2,7 @@
 
 /**
  *insert_dnodeint_at_index - function that inserts a new node
- *		at a given position.
+ *	at a given position.
  *
  *@h: linked list
  *@idx: index of the list where the new node should be added. Index starts at 0
