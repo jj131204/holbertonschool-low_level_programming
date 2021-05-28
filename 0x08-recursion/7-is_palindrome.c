@@ -54,4 +54,3 @@ int is_palindrome(char *s)
 
 	return (_palindrome(s, len - 1, stop));
 }
-
