@@ -1,4 +1,4 @@
-#ifndef _HOLBERTONH
+:wq:wqf _HOLBERTONH
 #define _HOLBERTONH
 
 int _putchar(char c);/*puthar*/
