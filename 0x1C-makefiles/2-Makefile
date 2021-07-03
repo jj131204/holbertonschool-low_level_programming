@@ -1,0 +1,12 @@
+# makefile2
+# $@ es el nombre del destino que se está generando 
+# $< el primer requisito previo (generalmente un archivo fuente)
+SRC = holberton.c main.c
+CC = gcc
+OBJ = holberton.o main.o
+NAME = holberton
+
+%.o: %c m.h
+	$(CC) -c -o $@ $<
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
