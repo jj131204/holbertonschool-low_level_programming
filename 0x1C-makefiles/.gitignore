@@ -2,4 +2,5 @@ holberton
 *.o
 main.c
 m.h
-
+*.swp
+*swo
