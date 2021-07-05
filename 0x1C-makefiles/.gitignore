@@ -1,5 +1,6 @@
 holberton
 *.o
+holberton.c
 main.c
 m.h
 *.swp

@@ -23,11 +23,10 @@ clean:
 oclean:
 	$(RM) $(OBJ)
 
-fclean:
-	$(RM) $(NAME)
-	$(RM) $(OBJ)
+#fclean:
+#	$(RM) $(NAME)
+#	$(RM) $(OBJ)
+
+fclean: clean oclean
 
 re: oclean all
-
-
-
