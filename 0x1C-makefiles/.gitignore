@@ -2,6 +2,7 @@ holberton
 *.o
 holberton.c
 main.c
+main.py
 m.h
 *.swp
 *swo
