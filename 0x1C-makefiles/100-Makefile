@@ -1,11 +1,18 @@
+# advanced
+
+
+#variables
 SRC=main.c holberton.c
 CC=gcc
 OBJ=$(SRC:.c=.o)
 NAME=holberton
 CFLAGS=-Wall -Werror -Wextra -pedantic
 
+
 .PHONY: all clean oclean fclean re
 
+
+#rules
 all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
